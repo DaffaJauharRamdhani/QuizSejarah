@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kuis | KUIZ SEJARAH</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">KS</span>
+            <span>KUIZ SEJARAH</span>
+        </a>
+
+        <nav class="nav-menu">
+            <a href="index.html">Beranda</a>
+            <a href="kategori.html" class="active">Kategori</a>
+        </nav>
+
+        <a href="kategori.html" class="nav-button">
+            Keluar Kuis
+        </a>
+
+    </header>
+
+
+    <!-- HALAMAN KUIS -->
+    <main class="quiz-page">
+
+        <!-- JUDUL KUIS -->
+        <section class="quiz-header">
+
+            <p class="eyebrow">
+                ARSIP PENGETAHUAN INDONESIA / 005
+            </p>
+
+            <h1 id="quizTitle">
+                Kuis Sejarah
+            </h1>
+
+            <p id="quizDescription">
+                Jawab pertanyaan berikut dengan teliti.
+            </p>
+
+        </section>
+
+
+        <!-- KONTEN KUIS -->
+        <section class="quiz-container">
+
+            <!-- INFORMASI SOAL -->
+            <div class="quiz-top-info">
+
+                <span id="questionNumber">
+                    PERTANYAAN 1 DARI 3
+                </span>
+
+                <span id="questionCategory">
+                    KATEGORI SEJARAH
+                </span>
+
+            </div>
+
+
+            <!-- PROGRESS BAR -->
+            <div class="quiz-progress">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+
+            <!-- AREA PERTANYAAN -->
+            <div id="questionArea">
+
+                <p class="question-label">
+                    PERTANYAAN
+                </p>
+
+                <h2 id="questionText">
+                    Pertanyaan akan ditampilkan di sini.
+                </h2>
+
+
+                <!-- PILIHAN JAWABAN -->
+                <div id="answerOptions" class="answer-options">
+
+                    <!-- Pilihan jawaban dibuat melalui JavaScript -->
+
+                </div>
+
+
+                <!-- PESAN -->
+                <p id="answerMessage" class="answer-message"></p>
+
+
+                <!-- TOMBOL SELANJUTNYA -->
+                <button
+                    type="button"
+                    id="nextButton"
+                    class="quiz-button"
+                    disabled
+                >
+                    Pilih Jawaban Terlebih Dahulu →
+                </button>
+
+            </div>
+
+
+            <!-- AREA HASIL KUIS -->
+            <div id="resultArea" class="result-area" hidden>
+
+                <p class="eyebrow">
+                    HASIL PEMBELAJARAN
+                </p>
+
+                <h2>
+                    Kuis Selesai!
+                </h2>
+
+                <p class="result-description">
+                    Berikut hasil pengerjaan kuis sejarah kamu.
+                </p>
+
+
+                <!-- NILAI AKHIR -->
+                <div class="score-display">
+
+                    <span id="finalScore">0</span>
+
+                    <small>
+                        NILAI AKHIR
+                    </small>
+
+                </div>
+
+
+                <!-- DETAIL HASIL -->
+                <p id="resultDetail"></p>
+
+
+                <!-- TOMBOL HASIL -->
+                <a
+                    href="hasil.html"
+                    class="quiz-button result-button"
+                >
+                    Lihat Hasil Lengkap →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="logo">
+            <span class="logo-mark">KS</span>
+            <span>KUIZ SEJARAH</span>
+        </div>
+
+        <p>
+            Belajar sejarah untuk memahami masa depan.
+        </p>
+
+        <span>
+            © 2026 KUIZ SEJARAH
+        </span>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -12,30 +11,30 @@
 
     <!-- NAVBAR -->
     <header class="navbar">
-
         <a href="index.html" class="logo">
             <span class="logo-mark">KS</span>
             <span>KUIZ SEJARAH</span>
         </a>
 
-        <!-- SAPAAN PENGGUNA -->
         <div id="welcomeMessage" class="account-greeting" hidden>
             Hai, <strong id="welcomeName">Pengguna</strong>!
         </div>
 
-        <!-- MENU NAVIGASI -->
         <nav class="nav-menu">
             <a href="index.html" class="active">Beranda</a>
             <a href="kategori.html">Kategori</a>
         </nav>
 
-        <!-- TOMBOL AKUN -->
         <div class="account-actions">
-
-            <a href="login.html"
-               id="loginNavButton"
-               class="nav-button">
+            <a href="login.html" id="loginNavButton" class="nav-button">
                 Masuk
+            </a>
+
+            <a href="change-password.html"
+               id="changePasswordNavButton"
+               class="nav-button"
+               hidden>
+                Ganti Password
             </a>
 
             <button type="button"
@@ -44,19 +43,14 @@
                     hidden>
                 Logout ↗
             </button>
-
         </div>
-
     </header>
-
 
     <main>
 
         <!-- HERO SECTION -->
         <section class="hero">
-
             <div class="hero-content">
-
                 <p class="eyebrow">
                     ARSIP PENGETAHUAN INDONESIA / 001
                 </p>
@@ -73,7 +67,6 @@
                 </p>
 
                 <div class="hero-actions">
-
                     <a href="kategori.html" class="button-primary">
                         Mulai Kuis <span>→</span>
                     </a>
@@ -83,44 +76,32 @@
                        class="button-secondary">
                         Masuk Akun
                     </a>
-
                 </div>
 
                 <div class="hero-note">
                     <span class="note-line"></span>
                     BELAJAR SEJARAH · UJI PENGETAHUAN · TEMUKAN WAWASAN
                 </div>
-
             </div>
 
-
-            <!-- GAMBAR HERO -->
             <div class="hero-image">
+                <img src="images/p.webp"
+                     alt="Ilustrasi sejarah Indonesia">
 
-    <img
-        src="images/p.webp"
-        alt="Ilustrasi sejarah Indonesia"
-    >
-
-    <div class="image-caption">
-        <span>CATATAN SEJARAH</span>
-        <span>INDONESIA</span>
-    </div>
-
-</div>
-
+                <div class="image-caption">
+                    <span>CATATAN SEJARAH</span>
+                    <span>INDONESIA</span>
+                </div>
+            </div>
         </section>
-
 
         <!-- INTRODUCTION SECTION -->
         <section class="intro-section">
-
             <div class="section-number">
                 01 / PENGANTAR
             </div>
 
             <div class="intro-content">
-
                 <h2>
                     Sejarah bukan sekadar cerita
                     tentang masa lalu.
@@ -132,28 +113,85 @@
                     Melalui KUIZ SEJARAH, kamu dapat mempelajarinya
                     dengan cara yang lebih menarik dan interaktif.
                 </p>
-
             </div>
-
         </section>
 
+        <!-- CATEGORY SECTION -->
+        <section class="category-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">02 / JELAJAHI MATERI</p>
+                    <h2>Topik Sejarah Indonesia</h2>
+                </div>
 
-      
+                <a href="kategori.html" class="text-link">
+                    Lihat semua kategori ↗
+                </a>
+            </div>
 
+            <div class="category-grid">
 
-            
+                <a href="kategori.html" class="category-item">
+                    <span class="category-number">01</span>
+
+                    <div>
+                        <h3>Kerajaan Nusantara</h3>
+                        <p>
+                            Mengenal kerajaan Hindu-Buddha dan Islam
+                            yang berkembang di Nusantara.
+                        </p>
+                    </div>
+
+                    <span class="category-arrow">↗</span>
+                </a>
+
+                <a href="kategori.html" class="category-item">
+                    <span class="category-number">02</span>
+
+                    <div>
+                        <h3>Penjajahan Indonesia</h3>
+                        <p>
+                            Mempelajari masa kolonial dan perjuangan
+                            rakyat melawan penjajahan.
+                        </p>
+                    </div>
+
+                    <span class="category-arrow">↗</span>
+                </a>
+
+                <a href="kategori.html" class="category-item">
+                    <span class="category-number">03</span>
+
+                    <div>
+                        <h3>Kemerdekaan Indonesia</h3>
+                        <p>
+                            Menelusuri peristiwa penting menuju
+                            Proklamasi Kemerdekaan.
+                        </p>
+                    </div>
+
+                    <span class="category-arrow">↗</span>
+                </a>
+
+                <a href="kategori.html" class="category-item">
+                    <span class="category-number">04</span>
+
+                    <div>
+                        <h3>Tokoh Nasional</h3>
+                        <p>
+                            Mengenal tokoh-tokoh yang berperan
+                            dalam perjalanan sejarah Indonesia.
+                        </p>
+                    </div>
 
                     <span class="category-arrow">↗</span>
                 </a>
 
             </div>
-
         </section>
-
 
         <!-- START SECTION -->
         <section class="start-section">
-
             <p class="eyebrow">
                 03 / MULAI PERJALANANMU
             </p>
@@ -166,15 +204,12 @@
             <a href="kategori.html" class="button-primary">
                 Mulai Sekarang <span>→</span>
             </a>
-
         </section>
 
     </main>
 
-
     <!-- FOOTER -->
     <footer class="footer">
-
         <a href="index.html" class="logo">
             <span class="logo-mark">KS</span>
             <span>KUIZ SEJARAH</span>
@@ -187,12 +222,8 @@
         <span>
             © 2026 KUIZ SEJARAH
         </span>
-
     </footer>
 
-
-    <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
-
 </body>
 </html>
